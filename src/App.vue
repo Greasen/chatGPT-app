@@ -22,6 +22,7 @@ function setQuestion() {
 
 function cancel() {
   form.desc = "";
+  items.value = []
 }
 
 async function setMesssage(msg: string) {
@@ -47,7 +48,7 @@ async function setMesssage(msg: string) {
             v-loading.fullscreen.lock="fullscreenLoading"
             >确定</el-button
           >
-          <el-button @click="cancel">取消</el-button>
+          <el-button @click="cancel">重置</el-button>
         </el-form-item>
       </el-form>
     </el-card>
